@@ -13,5 +13,8 @@ int main (){
 	else if (n%5==0){
 		printf ("%d la so chia het cho 5", n);
 	}
+	else {
+		printf ("%d la so khong chia het cho 3 va cho 5", n);
+	}
 	return 0;
 }
