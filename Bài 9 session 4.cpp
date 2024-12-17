@@ -38,14 +38,10 @@ int main (){
 					}
 					break;
 				case 2:
-					if (nam_nhuan(year) && (day>0) && (day <=29)){
+					if ( (nam_nhuan(year)) && (day>0) && (day <=29)){
 						printf ("ngay thang nam nhap vao hop le\n");
 					}
-					else {
-						printf ("ngay thang nam nhap vao khong hop le\n");
-						}
-					break;
-					if ( nam_khong_nhuan(year) && (day>0) && (day<=28)){
+					else if ( !(nam_nhuan(year)) && (day>0) && (day<29)){
 						printf ("ngay thang nam nhap vao hop le\n");
 					}
 					else {
